@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アプリ名</title>
+  <style>
+    :root { --bg: #fffdf7; --fg: #222; --accent: #2a7ae2; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg);
+      font-family: "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      display: grid; place-items: center; padding: 16px;
+    }
+    h1 { font-size: clamp(28px, 5vw, 56px); margin: 0 0 16px; }
+    button {
+      font: inherit; font-size: clamp(20px, 3vw, 32px); padding: 12px 32px;
+      border: none; border-radius: 12px; background: var(--accent); color: #fff; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>アプリ名</h1>
+    <button type="button" id="start">はじめる</button>
+  </main>
+  <script>
+    document.getElementById("start").addEventListener("click", () => {
+      alert("ここに アプリの なかみを つくります");
+    });
+  </script>
+</body>
+</html>
